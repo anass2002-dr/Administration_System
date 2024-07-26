@@ -9,6 +9,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { TablerIconsModule } from 'angular-tabler-icons';
 import * as TablerIcons from 'angular-tabler-icons/icons';
 import { AppDashboardComponent } from './dashboard/dashboard.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [AppDashboardComponent],
@@ -16,6 +18,8 @@ import { AppDashboardComponent } from './dashboard/dashboard.component';
     CommonModule,
     MaterialModule,
     FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
     NgApexchartsModule,
     RouterModule.forChild(PagesRoutes),
     TablerIconsModule.pick(TablerIcons),
