@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <h1>Update Component {{id}}</h1>
+  <p *ngIf="id">The ID is: {{ id }}</p>
+  <p *ngIf="!id">No ID provided</p>
+
+  <div *ngFor="let element of listInfo; index as i">
+    <ng-container *ngIf="element.name === 'anass'; else noMatch">
+      {{element.name}}
+    </ng-container>
+    <ng-template #noMatch>
+      hey {{element.name}}
+    </ng-template>
+  </div>
+</div>

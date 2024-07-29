@@ -6,6 +6,7 @@ import { AppChipsComponent } from './chips/chips.component';
 import { AppListsComponent } from './lists/lists.component';
 import { AppMenuComponent } from './menu/menu.component';
 import { AppTooltipsComponent } from './tooltips/tooltips.component';
+import { Update_listComponent } from './update_list/update_list.component';
 
 export const UiComponentsRoutes: Routes = [
   {
@@ -31,6 +32,7 @@ export const UiComponentsRoutes: Routes = [
         path: 'tooltips',
         component: AppTooltipsComponent,
       },
+      { path: 'update/:id', component: Update_listComponent },
     ],
   },
 ];
